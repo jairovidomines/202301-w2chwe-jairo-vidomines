@@ -9,7 +9,8 @@ const board = (rows, columns) => {
   for (let row = 0; row < totalRows; row++) {
     world[row] = [];
     for (let column = 0; column < totalColumns; column++) {
-      world[row][column] = new Cell(Math.floor(Math.random() * 2) === 1);
+      const cell = new Cell(Math.floor(Math.random() * 2) === 1);
+      world[row][column] = cell.getValue();
     }
   }
 
