@@ -6,7 +6,7 @@ export class Cell {
   }
 
   getValue() {
-    return this.isAlive ? "⚫" : "⚪";
+    return this.isAlive ? "⬛" : "⬜";
   }
 }
 export default Cell;
